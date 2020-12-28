@@ -23,8 +23,7 @@ body{
 }
 /*main container(contenedor principal)*/
 .main-container{
-    display: flex;
-    justify-content: center;
+  position: relative;
 }
 /*header(encabezado)*/
 header{
@@ -49,36 +48,59 @@ h1{
 /*Contenedor */
 .container{
     width: 530px;
-    height: 640px;
-    position: absolute;
-    top: 5%;
-    
+    height: 440px;
+    position: relative;
+    top:-271px;
+    left: 450px;
 }
 .create-activity{
     display: flex;
     justify-content:flex-end;
 }
+.create-activity input{
+    height: 60px;
+    font-size: 16px;
+    text-align: left;
+    padding: 4px 0 0 50px;
+    color: rgb(192,192,192);
+}
 .create{
-    width: 95%;
+    width: 100%;
     height: 35px;
-    margin: 5px;
+    margin: 3px;
     border-radius: 5px;
     border:none;
     outline: none;
-    
 }
-.option{
+.container-option{    
     display: flex;
     justify-content:space-around;
-    align-items: flex-end;
-    height: 400px;
-    
+    flex-wrap: wrap;
+    position: relative;
+    font-size: 15px;
+    padding: 4px 0 4px 0;
+    text-align: right;
+    top: 30px;
+    width: 527px;
+    height: 450px;
+    margin: 12px 0 0 0 ;
+    border-radius: 5px ;
+    box-shadow: 0 0 4px rgb(153, 151, 151);
+    background-color: rgb(255, 255, 255);
 }
-
-.container-list{
+.option{
+    border:1px solid black;
+}
+.list-option{
+    display: flex;
+    flex-direction: column; 
+}
+.footer-list{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    position: relative;
+    bottom: -50px;
 }
 
 
